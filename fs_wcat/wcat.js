@@ -33,7 +33,12 @@ for(let i=0;i<filesArr.length;i++)
     }
     // console.log(content);
     // node wcat.js -s "C:\Users\user\Desktop\git tut\fs_wcat\test_files\f1.txt"
-    
+    if(option.length==0)
+    {
+        console.log(content);
+        return;
+    }
+
     let ans= content.split("\n");
     let isSpresent=option.includes("-s");
     if(isSpresent)
@@ -72,7 +77,7 @@ if(isNfirst)
         console.log(i+1,ans[i]);
     }
 }
-else
+else if(option.includes("-b"))
 {   let num=1;
     for(let i=0;i<ans.length-1;i++)
     {
@@ -83,5 +88,6 @@ else
         }
     }
 }
+
 
     

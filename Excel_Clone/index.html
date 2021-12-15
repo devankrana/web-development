@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome -> while using icons  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- .menu_bar+.formula_bar+.grid_container+.sheets_container -->
+    <div class="menu_bar">
+        <!-- new open save -->
+        <div class="new_open_save_container">
+            <div class="icon_container">
+                <i class="fas fa-file"></i>
+            </div>
+            <div class="icon_container">
+                <i class="fas fa-envelope-open"></i>
+            </div>
+            <div class="icon_container">
+                <i class="fas fa-save"></i>
+            </div>
+            <input type="file" name="" style="display: none" multiple class="open_input">
+        </div>
+        <!-- font family and font size -->
+        <!-- select  -->
+        <div class="formatting-container">
+            <select class="font_family_input">
+                <option value="'Courier New'">Font-1</option>
+                <option value="'Franklin Gothic Medium'">Font-2</option>
+                <option value="'Trebuchet MS'">Font-3</option>
+                <option value="Georgia">Font-4</option>
+            </select>
+            <select class="font_size_input">
+                <option value="14">14</option>
+                <option value="18">18</option>
+                <option value="20">20</option>
+                <option value="24">24</option>
+            </select>
+        </div>
+        <div class="bui_container">
+            <i class="fas fa-bold"></i>
+            <i class="fas fa-underline"></i>
+            <i class="fas fa-italic"></i>
+
+        </div>
+        <!-- bold italic underline  -->
+        <!-- colors-->
+        <div class="alignment_container">
+            <i class="fas fa-align-right right"></i>
+            <i class="fas fa-align-center center"></i>
+            <i class="fas fa-align-justify justify"></i>
+            <i class="fas fa-align-left left"></i>
+        </div>
+        <!-- alignment -->
+        <div class="color-container">
+            <i class="fas fa-tint"></i>
+            <i class="fas fa-fill-drip"></i>
+            <input type="color" class="text_color" style="display: none">
+            <input type="color" class="background_color" style="display:none">
+        </div>
+    </div>
+    <div class="formula_bar">
+        <input type="text" class="address_input">
+        <img src="pngwing.com.png" alt="">
+        <input type="text" class="formula_input" placeholder="formula">
+    </div>
+    <div class="grid_container">
+        <div class="top_left_cell">
+        </div>
+        <div class="top_row">
+            <!-- static -->
+        </div>
+        <div class="left_col">
+        </div>
+        <div class="grid">
+            <!-- 2d grid build  -->
+        </div>
+    </div>
+    <div class="sheets_container">
+        <div class="add-sheet_container">
+            <i class="fas fa-plus icon"></i>
+        </div>
+        <div class="sheets-list">
+            <div class="sheet active-sheet" sheetIdx="0"> Sheet 1</div>
+        </div>
+    </div>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.1/xlsx.full.min.js"></script>  -->
+    <script src="init.js"></script>
+    <script src="menu.js"></script>
+    <script src="newopensave.js"></script>
+    <script src="formula.js"></script>
+</body>
+</html>
+<!-- alignment -->
+<!-- fonts -> fmaily fontsize-->
+<!-- color, background -> input type color -->
+<!-- /alignment-> textalign -->
